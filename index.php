@@ -32,19 +32,51 @@ metodi d’istanza che abbiamo visto stamattina e create un file index.php in cu
       return $this->title;
 
     }
+
+
+    public function getFilmGenre(){
+      
+      return $this->genre;
+
+    }
+
+
     
 
 
   }
 
 
-  $matrix = new Movie('Matrix', 'Fantascienza');
+  
+  
+  
+  
+  
+  
+  
+  
+  ?>
 
 
-  var_dump($matrix);
 
-
-
- 
-
-?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    
+    
+    
+    <h1> 
+      <?php
+      $matrix = new Movie('matrix', 'fantascienza');
+      echo $matrix->getFilmTitle() ?>
+      <br>
+     <?php echo  $matrix->getFilmGenre() ?>
+  </h1>
+</body>
+</html>
