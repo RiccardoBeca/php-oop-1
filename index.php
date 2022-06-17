@@ -27,9 +27,24 @@ metodi d’istanza che abbiamo visto stamattina e create un file index.php in cu
 
     }
    
+    public function getFilmTitle(){
+      
+      return $this->title;
+
+    }
+    
 
 
   }
 
+
+  $matrix = new Movie('Matrix', 'Fantascienza');
+
+
+  var_dump($matrix);
+
+
+
+ 
 
 ?>
