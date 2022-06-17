@@ -15,34 +15,33 @@ metodi d’istanza che abbiamo visto stamattina e create un file index.php in cu
 <?php  
 
   class Movie {
-
+    // dichiaro le mie variabili d'istanza
     public $title;
     public  $genre;
 
-
+    // passo i parametri nel construct che poi passero' nei parametri di Movie
     public function __construct($_title,$_genre) {
 
       $this->title = $_title;
       $this->genre = $_genre;
 
     }
-   
+    // funzione che mi ritorna il titolo  
     public function getFilmTitle(){
       
       return $this->title;
 
     }
 
-
+    // funzione che mi ritorna il genere
     public function getFilmGenre(){
       
       return $this->genre;
 
     }
 
-
   }
-  
+  // istanzio due oggetti Movie
   $matrix = new Movie('matrix', 'fantascienza');
   $fantozzi = new Movie('fantozzi', 'comico');
   
@@ -59,8 +58,6 @@ metodi d’istanza che abbiamo visto stamattina e create un file index.php in cu
     <title>php-oop-1</title>
   </head>
   <body>
-    
-    
     
     <h1> 
       <?php
