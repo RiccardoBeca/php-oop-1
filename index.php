@@ -41,19 +41,10 @@ metodi d’istanza che abbiamo visto stamattina e create un file index.php in cu
     }
 
 
-    
-
-
   }
-
-
   
-  
-  
-  
-  
-  
-  
+  $matrix = new Movie('matrix', 'fantascienza');
+  $fantozzi = new Movie('fantozzi', 'comico');
   
   ?>
 
@@ -65,7 +56,7 @@ metodi d’istanza che abbiamo visto stamattina e create un file index.php in cu
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>php-oop-1</title>
   </head>
   <body>
     
@@ -73,10 +64,14 @@ metodi d’istanza che abbiamo visto stamattina e create un file index.php in cu
     
     <h1> 
       <?php
-      $matrix = new Movie('matrix', 'fantascienza');
-      echo $matrix->getFilmTitle() ?>
-      <br>
-     <?php echo  $matrix->getFilmGenre() ?>
+        echo $matrix->getFilmTitle();
+        echo '<br>';
+        echo  $matrix->getFilmGenre();
+        echo '<br>';
+        echo $fantozzi->getFilmTitle();
+        echo '<br>';
+        echo  $fantozzi->getFilmGenre();
+      ?>
   </h1>
 </body>
 </html>
